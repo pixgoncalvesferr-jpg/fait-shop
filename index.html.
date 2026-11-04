@@ -1,1 +1,112 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAIT STORE</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #100d16;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+header {
+  padding: 22px;
+  background: #1b1425;
+  border-bottom: 1px solid #7135a0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo { color: #c084fc; font-size: 25px; font-weight: bold; }
+nav a { color: white; text-decoration: none; margin-left: 12px; }
+.hero {
+  text-align: center;
+  padding: 75px 20px;
+  background: linear-gradient(140deg,#25113b,#100d16);
+}
+.hero h1 { font-size: 38px; margin-bottom: 10px; }
+.hero span { color: #c084fc; }
+.hero p { color: #c4b5d9; }
+h2 { text-align: center; margin: 35px 0; }
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+  gap: 18px;
+  padding: 20px;
+  max-width: 950px;
+  margin: auto;
+}
+.card {
+  background: #1d1727;
+  border: 1px solid #49305f;
+  border-radius: 14px;
+  padding: 25px;
+  text-align: center;
+}
+.card h3 { color: #d8b4fe; }
+.price { font-size: 22px; font-weight: bold; }
+button {
+  background: #8038bb;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  padding: 12px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover { background: #a855f7; }
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #a99ab7;
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">FAIT STORE</div>
+  <nav><a href="#produtos">Produtos</a></nav>
+</header>
+
+<section class="hero">
+  <h1>SUA PRÓXIMA <span>CONQUISTA</span></h1>
+  <p>Bem-vindo à loja oficial da FAIT Family.</p>
+  <a href="#produtos"><button>VER PRODUTOS</button></a>
+</section>
+
+<h2 id="produtos">NOSSOS PRODUTOS</h2>
+
+<section class="products">
+  <div class="card">
+    <h3>Kit Básico</h3>
+    <p>Equipamentos para começar.</p>
+    <p class="price">R$ 0,00</p>
+    <button onclick="alert('Produto em breve!')">Em breve</button>
+  </div>
+
+  <div class="card">
+    <h3>Kit Premium</h3>
+    <p>Vantagens especiais no servidor.</p>
+    <p class="price">R$ 0,00</p>
+    <button onclick="alert('Produto em breve!')">Em breve</button>
+  </div>
+
+  <div class="card">
+    <h3>VIP FAIT</h3>
+    <p>Benefícios exclusivos.</p>
+    <p class="price">R$ 0,00</p>
+    <button onclick="alert('Produto em breve!')">Em breve</button>
+  </div>
+</section>
+
+<footer>
+  FAIT STORE © 2026 — Todos os direitos reservados.
+  <p>FAIT Family</p>
+</footer>
+</body>
+</html>
+
