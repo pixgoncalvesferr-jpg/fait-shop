@@ -1,2 +1,2 @@
-# fait-shop
-loja fait
+# FAIT STORE
+Loja oficial da FAIT Family.
