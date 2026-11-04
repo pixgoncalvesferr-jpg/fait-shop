@@ -6,107 +6,86 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FAIT STORE</title>
 <style>
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  background: #100d16;
-  color: white;
-  font-family: Arial, sans-serif;
-}
-header {
-  padding: 22px;
-  background: #1b1425;
-  border-bottom: 1px solid #7135a0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo { color: #c084fc; font-size: 25px; font-weight: bold; }
-nav a { color: white; text-decoration: none; margin-left: 12px; }
-.hero {
-  text-align: center;
-  padding: 75px 20px;
-  background: linear-gradient(140deg,#25113b,#100d16);
-}
-.hero h1 { font-size: 38px; margin-bottom: 10px; }
-.hero span { color: #c084fc; }
-.hero p { color: #c4b5d9; }
-h2 { text-align: center; margin: 35px 0; }
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
-  gap: 18px;
-  padding: 20px;
-  max-width: 950px;
-  margin: auto;
-}
-.card {
-  background: #1d1727;
-  border: 1px solid #49305f;
-  border-radius: 14px;
-  padding: 25px;
-  text-align: center;
-}
-.card h3 { color: #d8b4fe; }
-.price { font-size: 22px; font-weight: bold; }
-button {
-  background: #8038bb;
-  border: 0;
-  border-radius: 8px;
-  color: white;
-  padding: 12px 20px;
-  font-weight: bold;
-  cursor: pointer;
-}
-button:hover { background: #a855f7; }
-footer {
-  text-align: center;
-  padding: 30px;
-  color: #a99ab7;
-}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#100d16;color:white;font-family:Arial,sans-serif}
+header{padding:22px 7%;background:#191322;border-bottom:1px solid #39264d;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:25px;font-weight:bold;color:#b77aff}
+nav a{color:white;text-decoration:none;margin-left:18px}
+.hero{text-align:center;padding:85px 20px;background:linear-gradient(135deg,#29153d,#100d16)}
+.hero h1{font-size:40px;margin-bottom:15px}
+.hero span{color:#bd83ff}
+.hero p{color:#c5bacf;line-height:1.7}
+.section{padding:45px 7%}
+.section h2{margin-bottom:25px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.product{background:#1b1624;border:1px solid #39264d;border-radius:12px;padding:25px}
+.product h3{color:#c18aff;margin-bottom:12px}
+.product p{color:#bcb2c6;font-size:14px;line-height:1.6;margin-bottom:18px}
+.price{font-size:22px;font-weight:bold;margin-bottom:18px}
+.button{display:block;background:#8b45c9;color:white;text-align:center;padding:12px;border-radius:7px;text-decoration:none;font-weight:bold}
+.button:hover{background:#a65ce8}
+.notice{background:#1b1624;border-left:4px solid #b77aff;padding:20px;border-radius:7px;color:#d0c6d9;line-height:1.7}
+footer{text-align:center;padding:30px;background:#191322;color:#92869e;font-size:13px;margin-top:40px}
+@media(max-width:600px){header{flex-direction:column;gap:15px}nav a{margin:0 8px}.hero h1{font-size:31px}}
 </style>
 </head>
 <body>
+
 <header>
-  <div class="logo">FAIT STORE</div>
-  <nav><a href="#produtos">Produtos</a></nav>
+<div class="logo">FAIT STORE</div>
+<nav>
+<a href="#inicio">Início</a>
+<a href="#produtos">Produtos</a>
+<a href="#suporte">Suporte</a>
+</nav>
 </header>
 
-<section class="hero">
-  <h1>SUA PRÓXIMA <span>CONQUISTA</span></h1>
-  <p>Bem-vindo à loja oficial da FAIT Family.</p>
-  <a href="#produtos"><button>VER PRODUTOS</button></a>
+<section class="hero" id="inicio">
+<h1>Bem-vindo à <span>FAIT STORE</span></h1>
+<p>A loja oficial da FAIT Family.<br>
+Produtos, kits e benefícios para sua experiência no Minecraft Bedrock.</p>
 </section>
 
-<h2 id="produtos">NOSSOS PRODUTOS</h2>
+<section class="section" id="produtos">
+<h2>Nossos produtos</h2>
+<div class="products">
 
-<section class="products">
-  <div class="card">
-    <h3>Kit Básico</h3>
-    <p>Equipamentos para começar.</p>
-    <p class="price">R$ 0,00</p>
-    <button onclick="alert('Produto em breve!')">Em breve</button>
-  </div>
+<div class="product">
+<h3>Kit Inicial</h3>
+<p>Equipamentos para começar sua jornada no servidor.</p>
+<div class="price">R$ --,--</div>
+<a href="#suporte" class="button">Consultar</a>
+</div>
 
-  <div class="card">
-    <h3>Kit Premium</h3>
-    <p>Vantagens especiais no servidor.</p>
-    <p class="price">R$ 0,00</p>
-    <button onclick="alert('Produto em breve!')">Em breve</button>
-  </div>
+<div class="product">
+<h3>Kit Avançado</h3>
+<p>Equipamentos para jogadores que buscam mais competitividade.</p>
+<div class="price">R$ --,--</div>
+<a href="#suporte" class="button">Consultar</a>
+</div>
 
-  <div class="card">
-    <h3>VIP FAIT</h3>
-    <p>Benefícios exclusivos.</p>
-    <p class="price">R$ 0,00</p>
-    <button onclick="alert('Produto em breve!')">Em breve</button>
-  </div>
+<div class="product">
+<h3>Kit Especial</h3>
+<p>Itens e benefícios especiais disponíveis na FAIT.</p>
+<div class="price">R$ --,--</div>
+<a href="#suporte" class="button">Consultar</a>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="suporte">
+<h2>Atendimento</h2>
+<div class="notice">
+<p>Precisa de ajuda ou deseja informações sobre algum produto?</p>
+<p>Entre em contato com a equipe da FAIT Family pelo nosso atendimento oficial no Discord.</p>
+</div>
 </section>
 
 <footer>
-  FAIT STORE © 2026 — Todos os direitos reservados.
-  <p>FAIT Family</p>
+<p>FAIT STORE — FAIT Family</p>
+<p>© 2026 FAIT Family. Todos os direitos reservados.</p>
 </footer>
+
 </body>
 </html>
-
